@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pagination component</title>
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /* maincolor: #087f5b;
+      grey color: #343a40 */
+
+      * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "INTER", sans-serif;
+        color: #343a40;
+        font-size: 18px;
+      }
+      .Pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        gap: 10px;
+      }
+      .btn {
+        height: 40px;
+        width: 40px;
+
+        border: 1px solid #087f5b;
+        border-radius: 50%;
+        background-color: white;
+
+        color: #087f5b;
+        cursor: pointer;
+      }
+      .btn:link,
+      .btn:visited {
+      }
+      .btn:hover,
+      .btn:active {
+        background-color: #087f5b;
+        color: white;
+      }
+      .btn1 {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        align-self: center;
+        text-decoration: none;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+      }
+      .btn1:link,
+      .btn1:visited {
+        color: black;
+      }
+      .btn1:hover,
+      .btn1:active {
+        background-color: #087f5b;
+        color: white;
+      }
+      .w-6 {
+        transform: scale(0.5);
+      }
+      .Pagination span# {
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Pagination">
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <a class="btn1" href="#">1</a>
+      <a class="btn1" href="#">2</a>
+      <a class="btn1" href="#">3</a>
+      <a class="btn1" href="#">4</a>
+      <a class="btn1" href="#">5</a>
+      <a class="btn1" href="#">6</a>
+
+      <span>...</span>
+      <a class="btn1" href="#">23</a>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
